@@ -1,0 +1,102 @@
+[
+  {
+    "id": "q01",
+    "question": "PPGL 的 CT 影像表现和术前血管评估要点是什么？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "I-3 Imaging diagnosis"}]
+  },
+  {
+    "id": "q02",
+    "question": "嗜铬细胞瘤在 MRI 上有哪些常见特征？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "C. MRI"}]
+  },
+  {
+    "id": "q03",
+    "question": "MIBG 显像在 PPGL 诊断中的优势和局限是什么？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "MIBG scintigraphy"}]
+  },
+  {
+    "id": "q04",
+    "question": "嗜铬细胞瘤手术前为什么需要 alpha 受体阻滞？",
+    "relevant": [{"document_id": "PMC8905338", "section_contains": "Alpha-adrenoceptor blockade"}]
+  },
+  {
+    "id": "q05",
+    "question": "术前可以选择哪些选择性 alpha-1 受体阻滞剂？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "Selective α 1 -blockers"}]
+  },
+  {
+    "id": "q06",
+    "question": "现有 meta-analysis 对 PPGL 术前 alpha 阻滞的证据结论是什么？",
+    "relevant": [{"document_id": "PMC10389437", "section_contains": "Result"}]
+  },
+  {
+    "id": "q07",
+    "question": "PPGL 的生化诊断为什么优先检测 metanephrines？",
+    "relevant": [{"document_id": "PMC8090459"}]
+  },
+  {
+    "id": "q08",
+    "question": "SDHx 突变无症状携带者应如何初筛和随访？",
+    "relevant": [{"document_id": "PMC8205850"}]
+  },
+  {
+    "id": "q09",
+    "question": "SDHB 突变和 PPGL 转移风险有什么关系？",
+    "relevant": [{"document_id": "PMC11558956"}]
+  },
+  {
+    "id": "q10",
+    "question": "PPGL 为什么建议进行遗传检测？",
+    "relevant": [{"document_id": "PMC11558956"}, {"document_id": "PMC6827093"}]
+  },
+  {
+    "id": "q11",
+    "question": "为什么不建议在排除 PPGL 之前对肾上腺或腹膜后肿块穿刺？",
+    "relevant": [{"document_id": "PMC6827093", "section_contains": "Biopsy Is Not Recommended"}]
+  },
+  {
+    "id": "q12",
+    "question": "PPGL 精准医学管理如何根据分子分型选择治疗？",
+    "relevant": [{"document_id": "PMC8905338", "section_contains": "Personalized Management"}]
+  },
+  {
+    "id": "q13",
+    "question": "嗜铬细胞瘤和交感性副神经节瘤手术后的长期结局如何？",
+    "relevant": [{"document_id": "PMC10252063"}]
+  },
+  {
+    "id": "q14",
+    "question": "哪些临床特征提示 PPGL 转移风险较高？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "assessing metastasis risk"}]
+  },
+  {
+    "id": "q15",
+    "question": "妊娠期 PPGL 的诊断和影像检查有哪些特殊考虑？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "pregnancy"}]
+  },
+  {
+    "id": "q16",
+    "question": "头颈部副神经节瘤应该如何进行影像评估？",
+    "relevant": [{"document_id": "PMC12819074", "section_contains": "head and neck paragangliomas"}]
+  },
+  {
+    "id": "q17",
+    "question": "TotalSegmentator 原始 CT 模型可以分割多少种解剖结构？",
+    "relevant": [{"document_id": "11_totalsegmentator_arxiv_metadata_2208.05868"}]
+  },
+  {
+    "id": "q18",
+    "question": "How can TotalSegmentator be installed and executed from the command line?",
+    "relevant": [{"document_id": "11_totalsegmentator_official_readme", "section_contains": "Installation"}]
+  },
+  {
+    "id": "q19",
+    "question": "继发性高血压患者怀疑 PPGL 时应该如何诊断和定位？",
+    "relevant": [{"document_id": "PMC8377944"}]
+  },
+  {
+    "id": "q20",
+    "question": "PPGL 有哪些常见临床表现，从症状到诊断的流程是什么？",
+    "relevant": [{"document_id": "PMC7729715"}]
+  }
+]

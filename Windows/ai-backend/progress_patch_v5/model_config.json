@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "model_name": "ProgressPatchV5",
+  "architecture": "monai_unet_3d",
+  "num_classes": 11,
+  "organ_num_classes": 10,
+  "tumor_label": 10,
+  "dual_label_mode": true,
+  "center": "PUMCH_V5",
+  "input": {
+    "orientation": "RAS",
+    "spacing_mm": [1.0, 1.0, 1.0],
+    "intensity_window": [0, 255]
+  },
+  "inference": {
+    "roi_size": 256,
+    "overlap": 0.25,
+    "threshold": 0.5,
+    "foreground_margin": 10
+  }
+}

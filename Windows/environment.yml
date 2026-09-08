@@ -1,0 +1,61 @@
+# MedVision Windows x86_64 GPU environment.
+# Create from the project root with:
+#   conda env create -f environment.yml
+#   conda activate MedVision
+name: MedVision
+
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10.20
+  - pip=26.1.2
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  - pytorch-cuda=12.1
+  - numpy=1.26.4
+  - scipy=1.15.2
+  - pandas=2.3.2
+  - scikit-learn=1.7.2
+  - pip:
+      - TotalSegmentator==2.11.0
+      - monai==1.5.1
+      - nnunetv2==2.6.2
+      - SimpleITK==2.5.2
+      - nibabel==5.3.2
+      - scikit-image==0.25.2
+      - matplotlib==3.10.6
+      - tqdm==4.67.3
+      - vtk==9.3.1
+      - Pillow==11.1.0
+      - fastapi==0.141.1
+      - uvicorn==0.52.4
+      - pydantic==2.13.4
+      - python-multipart==0.0.32
+      - python-dotenv==1.2.3
+      - httpx==0.28.1
+      - PyJWT==2.10.1
+      - SQLAlchemy==2.0.52
+      - alembic==1.19.1
+      - pgvector==0.5.0
+      - "psycopg[binary]==3.3.4"
+      - "pwdlib[argon2]==0.3.1"
+      - PyMuPDF==1.26.4
+      - python-docx==1.2.0
+      - sentence-transformers==6.0.0
+      - rank-bm25==0.2.2
+      - PyYAML==6.0.3
+      - pytest==8.4.2
+
+variables:
+  nnUNet_compile: "F"
+  # On Chinese Windows, nnU-Net invokes native commands whose output follows
+  # the active Windows code page. Keep Python UTF-8 mode disabled so those
+  # subprocesses are decoded correctly; the launcher still forces UTF-8 for
+  # application logs and HTTP text.
+  PYTHONUTF8: "0"
+  PYTHONIOENCODING: "utf-8"

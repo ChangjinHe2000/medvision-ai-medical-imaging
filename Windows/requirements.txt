@@ -1,0 +1,42 @@
+# Install PyTorch/CUDA with environment.yml for Windows GPU use.
+
+# Segmentation and medical imaging
+TotalSegmentator==2.11.0
+monai==1.5.1
+nnunetv2==2.6.2
+SimpleITK==2.5.2
+nibabel==5.3.2
+numpy==1.26.4
+scipy==1.15.2
+pandas==2.3.2
+scikit-learn==1.7.2
+scikit-image==0.25.2
+matplotlib==3.10.6
+tqdm==4.67.3
+vtk==9.3.1
+Pillow==11.1.0
+
+# FastAPI
+fastapi==0.141.1
+uvicorn==0.52.4
+pydantic==2.13.4
+python-multipart==0.0.32
+python-dotenv==1.2.3
+httpx==0.28.1
+PyJWT==2.10.1
+
+# Authentication, PostgreSQL and pgvector
+SQLAlchemy==2.0.52
+alembic==1.19.1
+psycopg[binary]==3.3.4
+pgvector==0.5.0
+pwdlib[argon2]==0.3.1
+
+# Reports and public medical knowledge parsing/retrieval
+PyMuPDF==1.26.4
+python-docx==1.2.0
+sentence-transformers==6.0.0
+rank-bm25==0.2.2
+PyYAML==6.0.3
+
+# Qdrant is intentionally excluded. The formal RAG store is PostgreSQL + pgvector.

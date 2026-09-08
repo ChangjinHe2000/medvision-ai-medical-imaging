@@ -1,0 +1,790 @@
+{
+  "repository": "medvision-ai-medical-imaging-main-windows",
+  "audit": {
+    "schema_version": "1.0",
+    "generated_at": "2026-09-07T09:50:19.185439+00:00",
+    "root": "Windows",
+    "scanned_files": 151,
+    "scanned_bytes": 1170538,
+    "excluded_directories": [
+      ".git",
+      ".idea",
+      ".pytest_cache",
+      ".ruff_cache",
+      ".venv",
+      "__pycache__",
+      "dist",
+      "node_modules",
+      "target"
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "findings": [],
+    "status": "passed"
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 5148,
+      "sha256": "39b2e7077d29e80fc8aa22b240a0c341e0b9af138d099ed98d17636b964b41b9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1229,
+      "sha256": "874ef89446c677b52f299ffb2062277f1904346a9bb5d09b2b15fd862957001c"
+    },
+    {
+      "path": ".node-version",
+      "bytes": 8,
+      "sha256": "5b9d0e73029969ae9000117cb877f17bb9841c1279bfe8024e294acfcf017800"
+    },
+    {
+      "path": "ai-backend/backend/config.py",
+      "bytes": 7969,
+      "sha256": "4d0edf048cd9fef07fa985cba94dd85a128db9d2a0410c07413d9cc3faa139fa"
+    },
+    {
+      "path": "ai-backend/backend/core/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "ai-backend/backend/core/runtime.py",
+      "bytes": 1882,
+      "sha256": "2ff70ff94d5c45520e828eb47cc56aff9a6b9adc06da4a0bf71d77fbf414ffdf"
+    },
+    {
+      "path": "ai-backend/backend/ct/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "ai-backend/backend/ct/inference_wrapper.py",
+      "bytes": 1858,
+      "sha256": "c6de15040fd07a2cd2342968a471364c0a56693bbcf1c1c1ca76ee2dda3da8f3"
+    },
+    {
+      "path": "ai-backend/backend/ct/run_totalseg.py",
+      "bytes": 31573,
+      "sha256": "3f869089f745fc81bb11eef9f28f84c8d95148eeb236d8547e73feba2a096f7b"
+    },
+    {
+      "path": "ai-backend/backend/domain/__init__.py",
+      "bytes": 80,
+      "sha256": "dc8edd8a53f9b485683aedbc10e28dc0e5a5e30998bca72ddbb5bcb405868557"
+    },
+    {
+      "path": "ai-backend/backend/domain/task_contract.py",
+      "bytes": 4014,
+      "sha256": "21b17dbaae5abb83577f223522ccf0fee56a301316d9fb9e35230491ed891778"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/__init__.py",
+      "bytes": 245,
+      "sha256": "6b9f8c6a2a13c66209f3a7571fbb3347682d5c040e2a8c6d37c1e07d32ace72f"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/models.py",
+      "bytes": 9082,
+      "sha256": "b24f7c917d518d3b8b616730c73401df254e4a923a1cc540c99f120f461b85f5"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/privacy.py",
+      "bytes": 2078,
+      "sha256": "95fb081473cc7f13d055c0739b77b88f8c84cd9118020b91ee572b0384c59ebf"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/report_service.py",
+      "bytes": 15383,
+      "sha256": "da3f912570c52a1258d672b9093dd1ea342a451e48bd2d49b32619d6e0fc38c9"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/router.py",
+      "bytes": 13949,
+      "sha256": "da5d11bfb84f710b7f32cf9d8456b330bbddfc32ca358ebd173d5ea6f4da0a9e"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/schemas.py",
+      "bytes": 2553,
+      "sha256": "aa0cf169abec306419815d0ac0e7130c4f5e6144f5b322dc50ebcde05a735eb7"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/service.py",
+      "bytes": 29647,
+      "sha256": "6f5f4d14d6ed00986378aad09d2eb0cc76d17bd831b2dfdd73e88a2d6b2782bc"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/storage.py",
+      "bytes": 8448,
+      "sha256": "da2b97313f93473d80ea8cac1d78385757ac03593f15e5c3bac9156a008d5aaf"
+    },
+    {
+      "path": "ai-backend/backend/enterprise/workflow_router.py",
+      "bytes": 35525,
+      "sha256": "fb816c63608b4610d7761fce023b73cbb310052ae07f03a1169e2fa4bb61aa43"
+    },
+    {
+      "path": "ai-backend/backend/glioma/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "ai-backend/backend/glioma/case_service.py",
+      "bytes": 21216,
+      "sha256": "ab73722358ee13eae0e6aa21af162473d74bd7ca35278ed1c3dc5ddb19cf9ae5"
+    },
+    {
+      "path": "ai-backend/backend/glioma/gpu_guard.py",
+      "bytes": 2265,
+      "sha256": "962e860adae6660faac56b5746e5e0d49a863004977832c3fd692e7a54e56d7c"
+    },
+    {
+      "path": "ai-backend/backend/glioma/metrics_service.py",
+      "bytes": 21045,
+      "sha256": "736ebbeca3d4ffc96953c2f36eac24faed1650ee958729723342ee8fa8bd77c6"
+    },
+    {
+      "path": "ai-backend/backend/glioma/models.py",
+      "bytes": 5318,
+      "sha256": "49bd34de57cd1169141c7bc97a90f109358295297d6624ec10621e466fdcc03e"
+    },
+    {
+      "path": "ai-backend/backend/glioma/nifti_validator.py",
+      "bytes": 7520,
+      "sha256": "dbc01a0c49f5215b2a173a1849c622bf465cbd48467f821990474509e3c23af3"
+    },
+    {
+      "path": "ai-backend/backend/glioma/nnunet_service.py",
+      "bytes": 39289,
+      "sha256": "c41706364ff269125c48806b4833bfe53709f35d827f2aa65a949be3274f1ddd"
+    },
+    {
+      "path": "ai-backend/backend/glioma/router.py",
+      "bytes": 20499,
+      "sha256": "70a66e6a9fcdecb499886e19628baa83f0280a6d32005d62a99a3d5d9763c8fb"
+    },
+    {
+      "path": "ai-backend/backend/glioma/upload_service.py",
+      "bytes": 20690,
+      "sha256": "8ea2fd95742aac7196ae6ac6489464fc44222bf0926575ff54cefffa04ddce33"
+    },
+    {
+      "path": "ai-backend/backend/glioma/visualization_service.py",
+      "bytes": 26334,
+      "sha256": "2dff1f5b17d496393f20bd8fbc9fd60ae744f418daec4ed4b67a27fd78652af9"
+    },
+    {
+      "path": "ai-backend/backend/main.py",
+      "bytes": 72575,
+      "sha256": "b40bdbda0f94df267327555d49ab338e265925a1cfc5afcbeb862d69372ad48f"
+    },
+    {
+      "path": "ai-backend/backend/rag/__init__.py",
+      "bytes": 260,
+      "sha256": "023501f1e78cdefe09a769a212dd76439bee71e84df87662a4c2a63206bfd554"
+    },
+    {
+      "path": "ai-backend/backend/rag/build_chunks.py",
+      "bytes": 3233,
+      "sha256": "37bc19d98c5aea7fb6b8286c45e4167c98942c07caaf5663fa06de45d75028d6"
+    },
+    {
+      "path": "ai-backend/backend/rag/build_index.py",
+      "bytes": 1092,
+      "sha256": "9df075cc627b8a777af755a17c02b9a73d9c6a9c654287c79d14902a27f36672"
+    },
+    {
+      "path": "ai-backend/backend/rag/case_context.py",
+      "bytes": 5442,
+      "sha256": "66a044a0af011294a83c2cfa02311f740fb529b00578761e51ebdd55858eab69"
+    },
+    {
+      "path": "ai-backend/backend/rag/chunker.py",
+      "bytes": 4267,
+      "sha256": "f0af5903f031e005ddc3b3b7f5c9488a94c89cca15f644991c5187086416733d"
+    },
+    {
+      "path": "ai-backend/backend/rag/embedding_service.py",
+      "bytes": 3060,
+      "sha256": "038b6f46dd1d0113c21af713e889b01e257b525f155c66b06225e0402621ebad"
+    },
+    {
+      "path": "ai-backend/backend/rag/evaluate_retrieval.py",
+      "bytes": 5166,
+      "sha256": "759b978f3fc236f8a75f14b0e9910052439ffd0bc9a5c665995c028759a94e08"
+    },
+    {
+      "path": "ai-backend/backend/rag/hybrid_retriever.py",
+      "bytes": 4801,
+      "sha256": "e92d94c6919f75251aac7f544ea7bf306bde85c3029b4c95063c2ff8e3528053"
+    },
+    {
+      "path": "ai-backend/backend/rag/jats_parser.py",
+      "bytes": 11434,
+      "sha256": "e4d5609c835a70ee8e6d84cf49e8767e6ed6d667accf7824952dc452e3c738ed"
+    },
+    {
+      "path": "ai-backend/backend/rag/knowledge_admin.py",
+      "bytes": 18361,
+      "sha256": "114d13f824bffc26f88d5de9584d43c141178d3fd43ad057f44f082dc2172cfd"
+    },
+    {
+      "path": "ai-backend/backend/rag/prompt_builder.py",
+      "bytes": 5856,
+      "sha256": "a0d52020cef6315c8f08e12ab19371f19f30be95e0c045358005842509c74a7e"
+    },
+    {
+      "path": "ai-backend/backend/rag/reranker_service.py",
+      "bytes": 2051,
+      "sha256": "445fae700e78e31b30c3b81d46283f986580bde6ca6b4cc24498780cd48ee06d"
+    },
+    {
+      "path": "ai-backend/backend/rag/vector_store.py",
+      "bytes": 6073,
+      "sha256": "ab752e6796502fc3623394fc28b28c83506af3bc553350895dabd3c26933366e"
+    },
+    {
+      "path": "ai-backend/backend/report/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "ai-backend/backend/report/router.py",
+      "bytes": 8539,
+      "sha256": "90980587c17c7968ed7e4ab8a1deff17f309d09bc08173264f8fd0c6b61e0171"
+    },
+    {
+      "path": "ai-backend/backend/report_agent.py",
+      "bytes": 72246,
+      "sha256": "f5192b35e3b47c7fe3926a38a2ed51b907c750e27b8e592e68f53e03138ea4fe"
+    },
+    {
+      "path": "ai-backend/backend/services/__init__.py",
+      "bytes": 144,
+      "sha256": "519d1b216f87a721e6edbd9250601c65933fd6b370135b76bbb9a34467ce9452"
+    },
+    {
+      "path": "ai-backend/backend/services/inference_coordinator.py",
+      "bytes": 7026,
+      "sha256": "c61ed765a68346f7f3dbc0221098f3123a60438575322ffe396d5d29f846a7aa"
+    },
+    {
+      "path": "ai-backend/backend/workers/__init__.py",
+      "bytes": 68,
+      "sha256": "10775551b54db4024d604c69e2b889a51fcd50a313773bec4440891e2d7d1811"
+    },
+    {
+      "path": "ai-backend/backend/workers/brain_nnunet/__init__.py",
+      "bytes": 36,
+      "sha256": "fc9f390a271cfbc333e046ecd5e66c0dac84472799c565030be46c23c4ff8fa0"
+    },
+    {
+      "path": "ai-backend/backend/workers/brain_nnunet/worker.py",
+      "bytes": 4317,
+      "sha256": "73a84dd68aac46fc96e7e13f6c734b36454d08c05e27ba7a0e9d329745f5b94a"
+    },
+    {
+      "path": "ai-backend/backend/workers/ppgl_v5/__init__.py",
+      "bytes": 31,
+      "sha256": "5df77fba1cbad1fda40fac7e9c9067670043b827cbf00dba3d69166f74c9bec1"
+    },
+    {
+      "path": "ai-backend/backend/workers/ppgl_v5/worker.py",
+      "bytes": 3965,
+      "sha256": "535d2cb87d0d1911ff5af97f08faf8cae709d2e39622af34cce89e47c3370e30"
+    },
+    {
+      "path": "ai-backend/backend/workers/process_runner.py",
+      "bytes": 12055,
+      "sha256": "24581b0e51495e020f8d1a37ae1c4c9d6730be45436ea346c245472b1f09cdeb"
+    },
+    {
+      "path": "ai-backend/backend/workers/task_queue.py",
+      "bytes": 11732,
+      "sha256": "9c6098f77a93cc4d7cc48c66fb409bac32dddebf239792eb15d494ec90c016ab"
+    },
+    {
+      "path": "ai-backend/backend/workers/totalsegmentator/__init__.py",
+      "bytes": 32,
+      "sha256": "75feb17a4417885edcf62afb314337f22d11e019b1aa6e77e221787c90f158df"
+    },
+    {
+      "path": "ai-backend/backend/workers/totalsegmentator/worker.py",
+      "bytes": 4809,
+      "sha256": "2594ae0ae86a27876fa7e9924b6225796967368cefca4f6ec6fafc6b154415c2"
+    },
+    {
+      "path": "ai-backend/backend/workers/validation.py",
+      "bytes": 3889,
+      "sha256": "88878db15c78e46148adf5c17d3a107db12201c85bd290b8dcbcf703430a0be3"
+    },
+    {
+      "path": "ai-backend/knowledge_base/evaluation/questions.json",
+      "bytes": 3741,
+      "sha256": "a5f657db9b066b73dede92c780079535b99db3f7e1754ab0d5925cdd77956964"
+    },
+    {
+      "path": "ai-backend/migrations/20260829_01_pgvector_knowledge.sql",
+      "bytes": 2665,
+      "sha256": "da5698730a8f5389d021eea053f9f602305a70f36ecd72eb73f5e9b77c735379"
+    },
+    {
+      "path": "ai-backend/progress_patch_v5/__init__.py",
+      "bytes": 46,
+      "sha256": "de52b292a2578bc36ec91ab01a422f7472bd6ac90df5735332adce08ce65f254"
+    },
+    {
+      "path": "ai-backend/progress_patch_v5/infer_single_case.py",
+      "bytes": 16762,
+      "sha256": "eb1e196a167fc982dab34367ab000262739b67edc9e91de1421ce73c7af5d2bf"
+    },
+    {
+      "path": "ai-backend/progress_patch_v5/model.py",
+      "bytes": 811,
+      "sha256": "2983da45e3c4184cfd7e4d8afb9230fac632e4988f38b257d83f60036ca1fd57"
+    },
+    {
+      "path": "ai-backend/progress_patch_v5/model_config.json",
+      "bytes": 442,
+      "sha256": "705e7bf986aa6242c111152f6733d7d0fd751842f3a133d0e640edffe2e96396"
+    },
+    {
+      "path": "ai-backend/progress_patch_v5/weights/README.md",
+      "bytes": 173,
+      "sha256": "6208eb8efe97fc3b4fc644c6959f64d44c9971808c0aaadf30b7bf132e914978"
+    },
+    {
+      "path": "ai-backend/README.md",
+      "bytes": 2199,
+      "sha256": "2a579daf7377a89b673f6753651b44b79fd09de388d776f54e29fa0d02e0bd95"
+    },
+    {
+      "path": "ai-backend/run_totalseg_pipeline.py",
+      "bytes": 14565,
+      "sha256": "bf5686560e6493b3e2b654ca1b7b2f274757f1339ba5e0ccace340c83d3e5e58"
+    },
+    {
+      "path": "ai-backend/tests/stage6_contract_smoke.py",
+      "bytes": 5009,
+      "sha256": "d7a1506a580a7b0b8b2e681a07b40c10eef69ef365ec82991afae6cbe4715242"
+    },
+    {
+      "path": "ai-backend/tests/test_knowledge_submission_permissions.py",
+      "bytes": 3771,
+      "sha256": "722e783e93146248ca463b67c146f5d15535bc7ae34e3b773ea80990509cd55f"
+    },
+    {
+      "path": "ai-backend/tests/test_stage4_workers.py",
+      "bytes": 18564,
+      "sha256": "ea48863a43013b3327ace3bc61ce6c517d85cfda2601b637b2f570930e1f4be0"
+    },
+    {
+      "path": "ai-backend/tests/test_stage5_enterprise.py",
+      "bytes": 8650,
+      "sha256": "4a6f4f7b07dc4eee5dcd160c0e6999229344139fae88bb8a02af2905452346cb"
+    },
+    {
+      "path": "ai-backend/tests/test_stage7_report_ai_rag.py",
+      "bytes": 4099,
+      "sha256": "bed8096c2b578ffdd467ad4562846795f80121e1ed117b028e2bbb5c54782c44"
+    },
+    {
+      "path": "docs/ENVIRONMENT.md",
+      "bytes": 2099,
+      "sha256": "a367d9ef1176c1e66707372262a196a4ad26cc0a905a25c022fa870752419aa6"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "bytes": 2272,
+      "sha256": "b1af239669b3ad90da2497c09c239ee2db3c9757fc4ab118d658198c1c089e14"
+    },
+    {
+      "path": "docs/UPSTREAM.md",
+      "bytes": 2086,
+      "sha256": "bf065f19ffeb96989e40838f854b44f74359289aff8ef4935fd4cafe86a433cb"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 1511,
+      "sha256": "8960dc5074b322d1278c4a220fb1856d2a71eddd96c41e201491bb566143928f"
+    },
+    {
+      "path": "frontend-vue-prototype/.env.example",
+      "bytes": 186,
+      "sha256": "a4f73298670cd7727a0f777f87012a9ec74542b47f971300149e654301352d38"
+    },
+    {
+      "path": "frontend-vue-prototype/.gitignore",
+      "bytes": 253,
+      "sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8"
+    },
+    {
+      "path": "frontend-vue-prototype/index.html",
+      "bytes": 363,
+      "sha256": "417bba880b8eacbab35f96838e448d102e54da3940cec2d371294685b82ab64f"
+    },
+    {
+      "path": "frontend-vue-prototype/package-lock.json",
+      "bytes": 85959,
+      "sha256": "0b2b9e5ce906404c5b42deac7d165d5dcc3bcc90344e0d308ff91edac65cb216"
+    },
+    {
+      "path": "frontend-vue-prototype/package.json",
+      "bytes": 700,
+      "sha256": "9e3011340a9c494b76ed5777c293bcfe13a697643752204202f1b9371fb439e0"
+    },
+    {
+      "path": "frontend-vue-prototype/PPGL_frontend_README.md",
+      "bytes": 5505,
+      "sha256": "feca3e0ab758c88e278829805224c808c2684fb421b31dc7fb58028b20586490"
+    },
+    {
+      "path": "frontend-vue-prototype/public/favicon.svg",
+      "bytes": 9522,
+      "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66"
+    },
+    {
+      "path": "frontend-vue-prototype/public/icons.svg",
+      "bytes": 5031,
+      "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/auditApi.js",
+      "bytes": 532,
+      "sha256": "dd147dbe8eb9729b18cfa652a874204271dc84905e602738ff846bac32edd433"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/authApi.js",
+      "bytes": 961,
+      "sha256": "f2181c8cfee3d403bc1fb5842f7c05cc756a21085652809fae254ae2c9449f40"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/caseApi.js",
+      "bytes": 5085,
+      "sha256": "d61214b1094f95b2872243dead51c04a3cda8ecd3fafeec35868188f26fdbcc0"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/errors.js",
+      "bytes": 803,
+      "sha256": "7e0f96b2886e597915f861f79a961e3c8969953348d6b2bde78ab0e674405158"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/gliomaApi.js",
+      "bytes": 4800,
+      "sha256": "0dc0bd9b2c067c23808d1340f88de9a2fc0d3f14ceb92e82692ff0707ede3e98"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/knowledgeAdminApi.js",
+      "bytes": 1203,
+      "sha256": "1a499c76ae9f9483b501a23c20263dd1bdd22af8e964a50a23730c99c877214e"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/knowledgeSubmissionApi.js",
+      "bytes": 360,
+      "sha256": "b964f8fe597f2d7ede98512d05ebf2b09a14311816586d5fefc9256913407097"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/llmApi.js",
+      "bytes": 1822,
+      "sha256": "c229124c42648c171d106b4c038b594f6e2015c955b3c43a77b4bf4de87f098c"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/messagingApi.js",
+      "bytes": 559,
+      "sha256": "d8f95d69cdd60ce04d4483d73651122fc21d0c55e8b82691147929735b89af92"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/ragApi.js",
+      "bytes": 699,
+      "sha256": "b96598316602c381943f8c1e9fa7cc3b5ad660ad9561f76bc907725a8516fc80"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/reportApi.js",
+      "bytes": 2232,
+      "sha256": "5e070fb2f4b44afffcf4705498f34eb9f8471bba936aaae2e029f06648697016"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/request.js",
+      "bytes": 1213,
+      "sha256": "09d7ee7ddbb400c06a99ee6539340eea9a1cebaba4cfe53a715ffc52e19bfc7d"
+    },
+    {
+      "path": "frontend-vue-prototype/src/api/trashApi.js",
+      "bytes": 407,
+      "sha256": "8c6e1338779f0f7e2d89ca2ad623c455fef0c3ce094b73c506c644954c53baac"
+    },
+    {
+      "path": "frontend-vue-prototype/src/App.vue",
+      "bytes": 260,
+      "sha256": "e2470663770c13da0ff43bc8e1c78d0d987fe51749ce658efada737a55afbf4a"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/ClinicalPreviewPanel.vue",
+      "bytes": 5674,
+      "sha256": "a3dd2ee4f3dc77bc2f0d05b97b1afd4d23c58047f9d10763003d5e28168d1031"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/PrimaryActionPanel.vue",
+      "bytes": 2600,
+      "sha256": "375fcadbf81fefce271af77caae3b6961c018f004733969fc49ba42a22bb2266"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/RecentCasesTable.vue",
+      "bytes": 3140,
+      "sha256": "e5cb199601a33aa9db51c3ab9a4b422d3f1e5d36fc4c5dca6b45f19d0c8a34d0"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/StatsBar.vue",
+      "bytes": 1417,
+      "sha256": "758d203c4f441756227350397e1d4c1210882847d326a448930053456a761a3b"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/SystemStatusPanel.vue",
+      "bytes": 1477,
+      "sha256": "b13c5e7c49a9be000e20164be75197648e82edd15d44ab1438ca6f99473f945b"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/dashboard/WorkflowStepper.vue",
+      "bytes": 2289,
+      "sha256": "b6722b4a8756fedb68f4af939f95cc4d8a7b31f7773becd97ec2d039a89a6b97"
+    },
+    {
+      "path": "frontend-vue-prototype/src/components/GliomaModelViewer.vue",
+      "bytes": 8175,
+      "sha256": "bf712c9741dd1222cdb7a9327e4df6b61a9e8afba66ee674c18e54b19c90b781"
+    },
+    {
+      "path": "frontend-vue-prototype/src/config/runtime.js",
+      "bytes": 495,
+      "sha256": "932c2e49445dbded371defc23720d6a8bcdf7622436681b192172ad18aeee241"
+    },
+    {
+      "path": "frontend-vue-prototype/src/layout/AppLayout.vue",
+      "bytes": 8389,
+      "sha256": "c84c46b87f310fa5ab5f20d2b98b7bfa68d2d45b27be3ac6e446eec81e78c362"
+    },
+    {
+      "path": "frontend-vue-prototype/src/main.js",
+      "bytes": 273,
+      "sha256": "5b6a339a5fa48307efe6d7ad44b7c37e18e9563ce9e4e5671fe9b633ce70689e"
+    },
+    {
+      "path": "frontend-vue-prototype/src/router/index.js",
+      "bytes": 3348,
+      "sha256": "bbd8f2521b194bb8c9d4776ec4d8ad49b6b9f2b2e1d4a6facbc243af12ad871b"
+    },
+    {
+      "path": "frontend-vue-prototype/src/store/authStore.js",
+      "bytes": 1626,
+      "sha256": "8f6837b80af2f7ad630c9b4609001cab3324eca2242e21e164df927bc2450354"
+    },
+    {
+      "path": "frontend-vue-prototype/src/store/conversationStore.js",
+      "bytes": 1357,
+      "sha256": "17afb7c6415d103cf2b7c93f64a3bd0336b296caf5f966f4af40a4c9bacd5007"
+    },
+    {
+      "path": "frontend-vue-prototype/src/style.css",
+      "bytes": 6647,
+      "sha256": "c75d44e380e567d1b5ec2eef28ff23bd9e000efdf3aadd9315218b643009ca0a"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/AiAssistant.vue",
+      "bytes": 5644,
+      "sha256": "7e389fd4708d6a9108afdcb768a23c3372ee1c1904f6c8b2acdf2b0901a0852b"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/AuditLogs.vue",
+      "bytes": 3693,
+      "sha256": "e38483df18007b0f2849c9d26c7e6f362600154ad8590d4458e23743accb1aa8"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/CaseDetail.vue",
+      "bytes": 16311,
+      "sha256": "5b5b00d54ef174d2a82c6b6d2fd20f0d45068219a43d2b080ebe245b648e746b"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/CaseList.vue",
+      "bytes": 21530,
+      "sha256": "76740e6c4200e9fa23c8fa4bcd13c3e5c346e77603b71e2745521ea81aa05a5a"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/Dashboard.vue",
+      "bytes": 7871,
+      "sha256": "865ee36f49c53318697351864725d7d9daaff87e8470321ef1f17b21e670c6f9"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/DirectMessages.vue",
+      "bytes": 6409,
+      "sha256": "9aeb00c777a8ca5cfe109159b483818f601d3fa34cb14a7df07404a64b8fb7c1"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/GliomaCaseDetail.vue",
+      "bytes": 11753,
+      "sha256": "77840d15cbc22f8acb2a28bc4bd470f43380b8148c7c7a0827b74ac98039400e"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/GliomaUploadCase.vue",
+      "bytes": 15018,
+      "sha256": "98030fd68d840b6a62338730e6114907506313788ae6734083c6dbe673bc5b2d"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/KnowledgeAdmin.vue",
+      "bytes": 6577,
+      "sha256": "eecd2e2db936ebde5cbaede75c2bc89fddae71a775911bdcecaa718111ed3ae7"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/KnowledgeBaseView.vue",
+      "bytes": 18175,
+      "sha256": "3f1c0da3e535eb0c82b4b09f50d2b715c7f42e9dc7108fccf43c9d27ad766e3e"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/Login.vue",
+      "bytes": 4387,
+      "sha256": "c203fdfc8d487fbd0e717d056866806a062ca6c4b290efc6d3ba92d2525d4186"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/ReportView.vue",
+      "bytes": 11513,
+      "sha256": "7f3d91fb26c2e1bccda539da489151448220102b0a8d78bc478bdaad61699f31"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/ThreeDViewer.vue",
+      "bytes": 31593,
+      "sha256": "bcbf0a107fa3c98671f98e247b81cbbd7bcd92136952b103132390f7e0acc3ae"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/TrashCases.vue",
+      "bytes": 2827,
+      "sha256": "2ff9ec5fc2fa8f260cbc796b5216b74d779b2811151c859ecf6b8cf42545392c"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/TwoDViewer.vue",
+      "bytes": 10856,
+      "sha256": "42f601f05c8876d98e424288230a1c412d45abd4b0c9a4900eb80435cb5dec70"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/UploadCase.vue",
+      "bytes": 9058,
+      "sha256": "af4a6870d995e4db85fa690212a3489d96e43d4a0724f35fd9e6b24d91dc14ec"
+    },
+    {
+      "path": "frontend-vue-prototype/src/views/UserManagement.vue",
+      "bytes": 4913,
+      "sha256": "e63af110b2748ca685ff857836c511adbeab6239d054ea356537d01312455902"
+    },
+    {
+      "path": "frontend-vue-prototype/tests/frontend-contract.test.mjs",
+      "bytes": 2251,
+      "sha256": "840cdd276d53cbcf918264a9c671bcd76cb05a8b3b4fe6f27cdf1034bc78c408"
+    },
+    {
+      "path": "frontend-vue-prototype/vite.config.js",
+      "bytes": 494,
+      "sha256": "5399a9c59d14145536a28244e97bb69976f761dd085c724c9616fc395b005f2a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10902,
+      "sha256": "de86980edb44dc305ec62e54b9d1a219fa502f95daef98108ab2b5eeaa61656f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 839,
+      "sha256": "b3887e6b7b480bba32f2526002e36dffb82494b82de6c4bd53395410b6c8ee3c"
+    },
+    {
+      "path": "scripts/windows/audit_release.py",
+      "bytes": 7061,
+      "sha256": "6ac26907b0a688eddedb1bec4eb978fd6d0bcf69f616bd0c603c570abbe162ca"
+    },
+    {
+      "path": "scripts/windows/check-environment.ps1",
+      "bytes": 338,
+      "sha256": "55e509af5b99b5688953113e9d15080762600c9c6e453e1e705aee1a3d825c91"
+    },
+    {
+      "path": "scripts/windows/configure-lan-access.ps1",
+      "bytes": 1907,
+      "sha256": "849e8b197670db27deade57fbcd7647c6c1faccb572a8683a15dcc8cb699f619"
+    },
+    {
+      "path": "scripts/windows/initialize-rag-database.py",
+      "bytes": 1210,
+      "sha256": "5d836f45df2aeb654c619b6eb9d93d9f963aacd4acb09972f569fd75ee903f6c"
+    },
+    {
+      "path": "scripts/windows/initialize_enterprise_database.py",
+      "bytes": 3067,
+      "sha256": "570281dffa900010e0d894ec26029fe0e080409fa280c365acd4bd53894c77c2"
+    },
+    {
+      "path": "scripts/windows/initialize_postgresql.py",
+      "bytes": 5190,
+      "sha256": "27e22699b821f554124d9a5ca8406ce5e1305b06b1f15205aa725d5889940476"
+    },
+    {
+      "path": "scripts/windows/launcher-common.ps1",
+      "bytes": 2925,
+      "sha256": "104d5023aa686319755c911fcd2e8dba938fbe718af8acfa07f7cf9b62fe9b73"
+    },
+    {
+      "path": "scripts/windows/prepare_release.py",
+      "bytes": 5745,
+      "sha256": "c2569494f607ff8e02957163a2e76555f9126a843765797e47148e3c5357daf4"
+    },
+    {
+      "path": "scripts/windows/stage9_api_acceptance.py",
+      "bytes": 19532,
+      "sha256": "fe8a5c42432d0c7e8e80f2c1752f6f2f44ae83e08b3ec62302678e6e21ac5cf4"
+    },
+    {
+      "path": "scripts/windows/start.ps1",
+      "bytes": 417,
+      "sha256": "f409dbde25deb7048781aad123c691669ceec066aaaa2dfe2dd4103cdc1bb091"
+    },
+    {
+      "path": "scripts/windows/stop.ps1",
+      "bytes": 145,
+      "sha256": "be00ab903f53ad8bb2e1c80c9d7b98c002900655749f513b8470f503a4cb6024"
+    },
+    {
+      "path": "start.cmd",
+      "bytes": 199,
+      "sha256": "8db037faade6588ecf21494d6e8273c863ba94a7de03f79d41d7e5146c08e7e4"
+    },
+    {
+      "path": "start_system.py",
+      "bytes": 34237,
+      "sha256": "9f097b4599687e92a45a7b2780e4d28286c1b227a956da93e9472612e4ce4f8e"
+    },
+    {
+      "path": "stop.cmd",
+      "bytes": 198,
+      "sha256": "49f9c95dfd3101bbc5b630d61f38fd8cc338ddc0b3eae3aaa1e9c271738440a3"
+    },
+    {
+      "path": "tests/test_publication.py",
+      "bytes": 3599,
+      "sha256": "faeaa33a1a08cc3ceb19ab181cd2bdb92438fb19751685090b58dfb700bfabce"
+    },
+    {
+      "path": "tests/test_windows_launcher.py",
+      "bytes": 6746,
+      "sha256": "22b405b674dc251fd8444a4d8f1df3f061c962df27d3de065a2a234bac2492f9"
+    },
+    {
+      "path": "WEIGHTS_AND_DATA.md",
+      "bytes": 3170,
+      "sha256": "3a7423afff927d0391b0b52f5923407cc7a12d4ee5c9e3562a77383e6a2d1769"
+    }
+  ],
+  "publication_ready": false,
+  "manual_checks": [
+    "填写 Windows 版 GitHub 账号与维护者署名",
+    "确认原作者/合作者授权与项目 LICENSE",
+    "在全新 Windows 环境验证安装和自备权重的真实工作流"
+  ]
+}
