@@ -25,9 +25,9 @@
 | 来源与证据 | [copilot-evidence.png](assets/screenshots/copilot-evidence.png) |
 | 执行记录 | [ai-trace.png](assets/screenshots/ai-trace.png) |
 
-这些图片来自既有产品验收中的正常登录和实际操作，患者为虚构的 `DEMO-P001`。原始视口 1920×1080，保持原始截图字节，没有改写患者数据、模型结果或界面文字；SHA-256 与来源在 [asset-manifest.json](asset-manifest.json)。
+这些图片来自既有产品验收中的正常登录和实际操作，使用独立合成演示病例。原始视口 1920×1080，保持原始截图字节，没有改写患者数据、模型结果或界面文字；SHA-256 与来源在 [asset-manifest.json](asset-manifest.json)。
 
-截图对应较早的合成演示会话。它们说明界面功能，不代表当前真实影像、患者规模、全部新版页面或医学效果。当前真实 CT / 胸片的验证情况以单独工程摘要为准。
+系统真实数据验证使用 MIMIC-IV FHIR Demo 的公开去标识临床记录、LIDC-IDRI CT 和 MIDRC-RICORD-1C 胸片，详见[项目数据来源](../../README.md#数据来源)。这里的合成演示截图用于说明界面功能，未展示这些真实数据集；截图对应较早的会话，当前规模以[工程验证摘要](VERIFICATION.md)为准。
 
 ## 复用与署名
 

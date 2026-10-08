@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="#项目简介">项目简介</a> ·
+  <a href="#数据来源">数据来源</a> ·
   <a href="#主要功能">主要功能</a> ·
   <a href="#功能演示">功能演示</a> ·
   <a href="#技术架构">技术架构</a> ·
@@ -23,11 +24,28 @@
 
 MedVision 将分散的临床记录、影像和模型结果放回患者上下文，让使用者从查看记录、打开影像、运行 AI，到核对来源，在一个工作区内完成操作。
 
+新版使用 **MIMIC-IV FHIR Demo、LIDC-IDRI 和 MIDRC-RICORD-1C 的公开去标识数据**开展临床记录接入、真实影像阅片和模型任务验证，并使用独立合成病例进行界面演示与边界测试。
+
 项目由 PPGL CT 与脑胶质瘤 MRI 分析工作站逐步改进。新版通过确定性来源映射整合临床记录，通过受控 DICOM 网关连接阅片器，通过持久任务保存模型结果，并提供可核对引用的患者事实助手。
 
 典型流程：**选择患者 → 查看概览与时间线 → 打开影像 → 运行模型或读取已有结果 → 查询患者事实 → 核对引用与执行记录。**
 
 这是独立工程项目，用于学习、科研开发和软件流程验证，未在医院部署，未经临床有效性验证。
+
+## 数据来源
+
+临床记录和医学影像分别从公开数据集接入，保留各自来源身份。HAPI FHIR 和 OpenMRS 是接入平台，具体数据来源如下：
+
+| 数据集 | 数据性质 | 当前接入与用途 |
+| --- | --- | --- |
+| [MIMIC-IV Clinical Database Demo on FHIR 2.1.0](https://physionet.org/content/mimic-iv-fhir-demo/2.1.0/) | 来自真实临床记录的公开去标识 FHIR 数据 | 100 名患者的临床数据，经 HAPI FHIR 接入，用于时间线、检验、用药、来源查询与患者事实摘要验证。 |
+| [LIDC-IDRI](https://www.cancerimagingarchive.net/collection/lidc-idri/) | TCIA 公开去标识胸部 CT | 20 名患者、5,130 张切片，用于阅片；其中 5 个独立病例完成 CT 分割及三维展示。 |
+| [MIDRC-RICORD-1C](https://www.cancerimagingarchive.net/collection/midrc-ricord-1c/) | TCIA 公开去标识胸片 | 21 名患者用于本地阅片验证，其中 20 例完成 CUDA 模型推理及结果保存。 |
+| [Synthea](https://synthetichealth.github.io/synthea/) 兼容记录与合成测试病例 | 合成开发数据 | 用于 OpenMRS 接入、重复导入、权限隔离、缺失状态及界面演示。 |
+
+MIMIC 名称中的 **Demo** 指公开临床数据库子集，其记录来源于去标识化的真实临床数据。系统里的合成演示病例单独用于展示和回归，不代表上述公开数据集。
+
+当前 202 个可见身份还包含历史开发记录，数据覆盖程度不同。临床数据与 CT / 胸片患者分别来自独立数据集，未将其拼接为同一批患者的完整多模态病历。公开数据不随仓库分发，使用遵循对应数据集许可。
 
 ## 主要功能
 
@@ -62,9 +80,9 @@ MedVision 将分散的临床记录、影像和模型结果放回患者上下文�
 
 患者工作区按 **概览、时间线、检验、用药、影像与 AI、来源与证据** 六个页签组织信息。
 
-![实际合成演示患者概览与六个工作区页签](docs/showcase/assets/screenshots/patient-overview.png)
+![患者概览与六个工作区页签](docs/showcase/assets/screenshots/patient-overview.png)
 
-**截图来源：** 已保存的实际合成演示会话，患者为虚构的 `DEMO-P001`。图片保持原始界面与结果，来自较早的产品验收版本；当前真实 CT / 胸片验证规模在“工程验证”中单列。
+**界面截图：** 以下为系统实际操作截图，使用独立合成演示病例，保留原始界面与结果。真实公开数据的来源见上表，当前接入和模型执行规模见“工程验证”；截图对应较早的产品验收版本。
 
 <details>
 <summary>展开：临床时间线、影像任务、助手和引用</summary>
@@ -73,19 +91,19 @@ MedVision 将分散的临床记录、影像和模型结果放回患者上下文�
 
 | 临床时间线 | 影像与 AI |
 | --- | --- |
-| ![合成演示患者的临床时间线](docs/showcase/assets/screenshots/clinical-timeline.png) | ![合成演示患者的影像与 AI 任务](docs/showcase/assets/screenshots/imaging-ai.png) |
+| ![临床时间线](docs/showcase/assets/screenshots/clinical-timeline.png) | ![影像与 AI 任务](docs/showcase/assets/screenshots/imaging-ai.png) |
 | 筛选记录，核对发生时间和来源。 | 从 Study 进入阅片，查看保存的任务与模型结果。 |
 
 ### 患者助手与来源引用
 
 | Clinical Copilot | 来源与证据 |
 | --- | --- |
-| ![合成演示患者的 Copilot 答复](docs/showcase/assets/screenshots/copilot-answer.png) | ![合成演示患者的引用与证据抽屉](docs/showcase/assets/screenshots/copilot-evidence.png) |
+| ![Copilot 答复](docs/showcase/assets/screenshots/copilot-answer.png) | ![引用与证据抽屉](docs/showcase/assets/screenshots/copilot-evidence.png) |
 | 根据结构化事实提供患者摘要。 | 点击引用，重新鉴权后读取支持记录。 |
 
 ### AI Trace
 
-![实际合成演示会话的 AI 执行记录](docs/showcase/assets/screenshots/ai-trace.png)
+![AI 执行记录](docs/showcase/assets/screenshots/ai-trace.png)
 
 查看一次执行的事件、状态和耗时。截图中的任务数和时间属于该演示会话，不作为当前数据规模或性能指标。
 
@@ -148,7 +166,7 @@ cd medvision-ai-medical-imaging
 ## 模型、数据与使用范围
 
 - 仓库不附带模型权重、真实患者数据库、医学影像、运行结果、私有账号或密钥。模型与数据需分别确认来源和使用许可，见 [WEIGHTS_AND_DATA.md](WEIGHTS_AND_DATA.md)。
-- 展示截图使用虚构合成病例与技术演示影像；当前真实影像只通过聚合规模和示意图介绍。图片来源和完整性记录见[素材清单](docs/showcase/asset-manifest.json)。
+- 界面展示使用独立合成演示病例，真实影像验证结果以聚合规模和示意图展示。图片来源和完整性记录见[素材清单](docs/showcase/asset-manifest.json)。
 - 默认 Copilot 采用确定性工具查询和事实摘要；生成式模型、独立 RAG 和医学知识检索仍属实验能力。
 - 模型分数不是疾病概率。当前验证说明软件链路和技术一致性，未提供医学真值支持的 AUC、Dice、诊断准确率或临床有效性结论。
 - CT 三维窗口直接 resize 曾出现原图平面黑屏；在目标尺寸重新打开已验证，实时 resize 问题仍保留。
