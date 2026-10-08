@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc"><title id="title">MedVision 系统架构与数据流</title><desc id="desc">HAPI FHIR 与 OpenMRS 接入 Spring Boot 和 MySQL；Orthanc 通过授权网关进入 OHIF；FastAPI CPU 或 CUDA 推理形成持久任务和结果，Vue 与 Copilot 展示可引用的患者事实。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#087f78"/></marker></defs><rect width="1600" height="900" fill="#f4f7f9"/><g font-family="'Noto Sans CJK SC','Microsoft YaHei',system-ui,sans-serif">
+<text x="64" y="58" font-size="18" font-weight="700" fill="#087f78" text-anchor="start">SYSTEM DESIGN / 系统架构</text>
+<text x="64" y="124" font-size="48" font-weight="700" fill="#132b3a" text-anchor="start">从多源接入到可追溯的患者工作区</text>
+<text x="64" y="169" font-size="23" font-weight="400" fill="#526976" text-anchor="start">临床事实、影像与模型任务通过授权接口协作，结果持久保存。</text>
+<text x="64" y="233" font-size="28" font-weight="700" fill="#132b3a" text-anchor="start">01  数据与计算</text>
+<text x="64" y="268" font-size="19" font-weight="400" fill="#526976" text-anchor="start">Sources &amp; Compute</text>
+<text x="590" y="233" font-size="28" font-weight="700" fill="#132b3a" text-anchor="start">02  服务与持久化</text>
+<text x="590" y="268" font-size="19" font-weight="400" fill="#526976" text-anchor="start">Services &amp; Persistence</text>
+<text x="1116" y="233" font-size="28" font-weight="700" fill="#132b3a" text-anchor="start">03  使用与追溯</text>
+<text x="1116" y="268" font-size="19" font-weight="400" fill="#526976" text-anchor="start">Experience &amp; Evidence</text>
+<rect x="64" y="298" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="65" y="322" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="89" y="341" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">HAPI FHIR / OpenMRS</text>
+<text x="89" y="381" font-size="20" font-weight="400" fill="#526976" text-anchor="start">来源适配器 · 统一患者与就诊</text>
+<text x="89" y="414" font-size="20" font-weight="400" fill="#526976" text-anchor="start">保留源编号、批次和映射版本</text>
+<rect x="590" y="298" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="591" y="322" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="615" y="341" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">Spring Boot / MySQL</text>
+<text x="615" y="381" font-size="20" font-weight="400" fill="#526976" text-anchor="start">认证授权 · 患者与临床事实</text>
+<text x="615" y="414" font-size="20" font-weight="400" fill="#526976" text-anchor="start">接入去重 · 查询与来源追溯</text>
+<rect x="1116" y="298" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="1117" y="322" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="1141" y="341" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">Vue 患者工作区</text>
+<text x="1141" y="381" font-size="20" font-weight="400" fill="#526976" text-anchor="start">目录 · 时间线 · 检验与用药</text>
+<text x="1141" y="414" font-size="20" font-weight="400" fill="#526976" text-anchor="start">Copilot 查询摘要与来源引用</text>
+<path d="M491 372 L579 372" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1017 372 L1105 372" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="64" y="472" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="65" y="496" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="89" y="515" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">Orthanc</text>
+<text x="89" y="555" font-size="20" font-weight="400" fill="#526976" text-anchor="start">DICOM 影像归档与检索</text>
+<text x="89" y="588" font-size="20" font-weight="400" fill="#526976" text-anchor="start">Study / Series / Instance</text>
+<rect x="590" y="472" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="591" y="496" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="615" y="515" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">受控影像网关</text>
+<text x="615" y="555" font-size="20" font-weight="400" fill="#526976" text-anchor="start">患者访问校验 · 阅片 Session</text>
+<text x="615" y="588" font-size="20" font-weight="400" fill="#526976" text-anchor="start">授权影像与分割产物访问</text>
+<rect x="1116" y="472" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="1117" y="496" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="1141" y="515" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">OHIF 阅片器</text>
+<text x="1141" y="555" font-size="20" font-weight="400" fill="#526976" text-anchor="start">CT / 胸片 · MPR · SEG 叠加</text>
+<text x="1141" y="588" font-size="20" font-weight="400" fill="#526976" text-anchor="start">三维表面展示与旋转</text>
+<path d="M491 546 L579 546" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1017 546 L1105 546" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="64" y="646" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="65" y="670" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="89" y="689" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">FastAPI / CPU · CUDA</text>
+<text x="89" y="729" font-size="20" font-weight="400" fill="#526976" text-anchor="start">NIH DenseNet121 胸片模型</text>
+<text x="89" y="762" font-size="20" font-weight="400" fill="#526976" text-anchor="start">TotalSegmentator CT 分割</text>
+<rect x="590" y="646" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="591" y="670" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="615" y="689" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">持久化任务与结果</text>
+<text x="615" y="729" font-size="20" font-weight="400" fill="#526976" text-anchor="start">排队 · 状态 · 取消与重试</text>
+<text x="615" y="762" font-size="20" font-weight="400" fill="#526976" text-anchor="start">保存模型版本、分数与产物</text>
+<rect x="1116" y="646" width="420" height="146" rx="22" fill="white" stroke="#dce6e9"/>
+<rect x="1117" y="670" width="5" height="98" rx="2" fill="#087f78"/>
+<text x="1141" y="689" font-size="25" font-weight="700" fill="#132b3a" text-anchor="start">Vue 结果 / AI Trace</text>
+<text x="1141" y="729" font-size="20" font-weight="400" fill="#526976" text-anchor="start">分数 · 叠加 · 模型结果引用</text>
+<text x="1141" y="762" font-size="20" font-weight="400" fill="#526976" text-anchor="start">事件 · 状态 · 耗时与来源</text>
+<path d="M491 720 L579 720" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1017 720 L1105 720" fill="none" stroke="#087f78" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="800" y="824" font-size="19" font-weight="400" fill="#526976" text-anchor="middle">箭头表示主要数据流；工作区经授权 API 发起查询、阅片与任务请求。</text>
+<path d="M64 842 L1536 842" fill="none" stroke="#dce6e9" stroke-width="3"/>
+<text x="64" y="876" font-size="17" font-weight="600" fill="#526976" text-anchor="start">MEDVISION AI WORKBENCH · 医智工坊</text>
+<text x="1536" y="876" font-size="17" font-weight="400" fill="#526976" text-anchor="end">架构示意 · 核心运行链路</text>
+</g></svg>

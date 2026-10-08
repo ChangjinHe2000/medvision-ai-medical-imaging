@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "screenshots": [
+    {
+      "file": "assets/screenshots/patient-overview.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/04-patient-overview.png",
+      "sha256": "e231b2a937ea9331467b0f693a805d8c76a44e4c44ef3bcf80785864c39d885c",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    },
+    {
+      "file": "assets/screenshots/clinical-timeline.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/05-patient-timeline.png",
+      "sha256": "3745505ab8c94b54b30fa828bd0f6797bb83f860cd3b7e5f4c2a32b6c5890750",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    },
+    {
+      "file": "assets/screenshots/imaging-ai.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/06-imaging-ai.png",
+      "sha256": "7aa87f7df122e0e059c9f4606b7cbbc0546971f450c484070dedba88bfc14e07",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    },
+    {
+      "file": "assets/screenshots/copilot-answer.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/07a-copilot-answer.png",
+      "sha256": "8627cee81d638f639f8f128de97b850a9ab84be79ed2da047e854d67343ed1b8",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    },
+    {
+      "file": "assets/screenshots/copilot-evidence.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/07-copilot-evidence.png",
+      "sha256": "15a3172622e8f471bbfa250e649a2883ba4ea70f64e8eeb331bea79f1c70cfd0",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    },
+    {
+      "file": "assets/screenshots/ai-trace.png",
+      "origin": "FINAL_UX_REMEDIATION/screenshots-result-time/1920/08-ai-trace.png",
+      "sha256": "321efab08d5b43a0f357477cc9173c93f56b4ceae896eb36992ad2ab83f02686",
+      "classification": "SYNTHETIC_DEMO",
+      "transform": "none; byte-identical original capture",
+      "capture_viewport": [
+        1920,
+        1080
+      ],
+      "scope": "Earlier actual synthetic UI session; not a screenshot of current real CT/CXR or current workspace census",
+      "license": "Original documentation Apache-2.0; displayed third-party interface retains original terms"
+    }
+  ],
+  "claims_as_of": "2026-10-05",
+  "publication": "PUBLIC_DOCUMENTATION_ASSETS_ONLY",
+  "diagrams": [
+    {
+      "file": "assets/feature-map.svg",
+      "sha256": "250f4ee3be88339008b073fb30897ccce283e455b2edebe5d584719d38d90b81",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    },
+    {
+      "file": "assets/feature-map.png",
+      "sha256": "de3ae8cf5f909069655b6cfdac1841a34c0c9743597f36302d4ad8182e6365b1",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    },
+    {
+      "file": "assets/architecture.svg",
+      "sha256": "581c2a5c2bb069002a8a890bd2e867568466a24c3c10aeea20ec8ec0a11030ae",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    },
+    {
+      "file": "assets/architecture.png",
+      "sha256": "a5a982917daa51ab545037266014a1d39a73eaebf267dbd2c042f644ff3f67c0",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    },
+    {
+      "file": "assets/validation.svg",
+      "sha256": "14c83b189abe1966a25d7f85b6a587e8eed75c3b94b7e3008471357ba05034fb",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    },
+    {
+      "file": "assets/validation.png",
+      "sha256": "4f5e3eabd85e78266df5e794f65dcd6fef766b86f15b577614e1f5c9f4933cbb",
+      "classification": "ORIGINAL_SCHEMATIC",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "license": "Apache-2.0 original documentation",
+      "claims_as_of": "2026-10-05"
+    }
+  ],
+  "source_code_status": "Latest local clinical workbench source is not included in this documentation update; repository retains CT/MRI baseline and Windows port."
+}

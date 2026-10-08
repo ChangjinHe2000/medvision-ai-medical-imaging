@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc"><title id="title">真实数据与工程验证范围</title><desc id="desc">截至2026年10月5日，202个可见患者身份，其中100有临床事实、42有影像含合成病例、52仅有就诊、8仅有基本信息。真实影像20名CT患者共5130切片、21名胸片患者；20独立胸片完成CUDA推理、5独立CT完成CUDA分割。验证范围为工程链路，不代表医学诊断准确率。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#087f78"/></marker></defs><rect width="1600" height="900" fill="#f4f7f9"/><g font-family="'Noto Sans CJK SC','Microsoft YaHei',system-ui,sans-serif">
+<text x="64" y="58" font-size="18" font-weight="700" fill="#087f78" text-anchor="start">ENGINEERING EVIDENCE / 验证范围</text>
+<text x="64" y="124" font-size="48" font-weight="700" fill="#132b3a" text-anchor="start">有证据的规模，也有清楚的边界</text>
+<text x="64" y="169" font-size="23" font-weight="400" fill="#526976" text-anchor="start">证据截至 2026-10-05 · 患者覆盖、真实影像与 GPU 任务分别计数。</text>
+<rect x="64" y="212" width="390" height="177" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="91" y="250" font-size="23" font-weight="600" fill="#526976" text-anchor="start">工作区可见患者身份</text>
+<text x="91" y="329" font-size="76" font-weight="700" fill="#132b3a" text-anchor="start">202</text>
+<text x="254" y="329" font-size="24" font-weight="400" fill="#526976" text-anchor="start">个</text>
+<text x="91" y="370" font-size="20" font-weight="600" fill="#087f78" text-anchor="start">身份总数，不等于完整病历数</text>
+<rect x="476" y="212" width="1060" height="177" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="503" y="250" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">按实际数据覆盖划分 · 互斥分组</text>
+<text x="503" y="309" font-size="43" font-weight="700" fill="#087f78" text-anchor="start">100</text>
+<text x="503" y="345" font-size="22" font-weight="400" fill="#526976" text-anchor="start">有临床事实</text>
+<text x="758" y="309" font-size="43" font-weight="700" fill="#087f78" text-anchor="start">42</text>
+<text x="758" y="345" font-size="22" font-weight="400" fill="#526976" text-anchor="start">有影像*</text>
+<text x="1013" y="309" font-size="43" font-weight="700" fill="#526976" text-anchor="start">52</text>
+<text x="1013" y="345" font-size="22" font-weight="400" fill="#526976" text-anchor="start">仅有就诊</text>
+<text x="1268" y="309" font-size="43" font-weight="700" fill="#526976" text-anchor="start">8</text>
+<text x="1268" y="345" font-size="22" font-weight="400" fill="#526976" text-anchor="start">仅基本信息</text>
+<text x="503" y="375" font-size="18" font-weight="400" fill="#526976" text-anchor="start">* 42 含工程合成病例；独立真实公开影像患者为 41 名。</text>
+<rect x="64" y="418" width="347" height="229" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="88" y="456" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">真实 CT 影像</text>
+<text x="88" y="518" font-size="58" font-weight="700" fill="#087f78" text-anchor="start">20</text>
+<text x="88" y="553" font-size="20" font-weight="400" fill="#526976" text-anchor="start">名患者 · 20 Studies</text>
+<text x="88" y="588" font-size="20" font-weight="400" fill="#132b3a" text-anchor="start">5,130 张源切片</text>
+<text x="88" y="623" font-size="18" font-weight="400" fill="#526976" text-anchor="start">LIDC-IDRI</text>
+<rect x="439" y="418" width="347" height="229" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="463" y="456" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">真实胸片影像</text>
+<text x="463" y="518" font-size="58" font-weight="700" fill="#087f78" text-anchor="start">21</text>
+<text x="463" y="553" font-size="20" font-weight="400" fill="#526976" text-anchor="start">名患者 · 21 Studies</text>
+<text x="463" y="588" font-size="20" font-weight="400" fill="#132b3a" text-anchor="start">20 例满足模型输入要求</text>
+<text x="463" y="623" font-size="18" font-weight="400" fill="#526976" text-anchor="start">RICORD</text>
+<rect x="814" y="418" width="347" height="229" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="838" y="456" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">胸片 CUDA 推理</text>
+<text x="838" y="518" font-size="58" font-weight="700" fill="#087f78" text-anchor="start">20</text>
+<text x="838" y="553" font-size="20" font-weight="400" fill="#526976" text-anchor="start">个独立真实输入</text>
+<text x="838" y="588" font-size="20" font-weight="400" fill="#132b3a" text-anchor="start">持久保存并展示 14 项分数</text>
+<text x="838" y="623" font-size="18" font-weight="400" fill="#526976" text-anchor="start">NIH DenseNet121</text>
+<rect x="1189" y="418" width="347" height="229" rx="22" fill="white" stroke="#dce6e9"/>
+<text x="1213" y="456" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">CT CUDA 分割</text>
+<text x="1213" y="518" font-size="58" font-weight="700" fill="#087f78" text-anchor="start">5</text>
+<text x="1213" y="553" font-size="20" font-weight="400" fill="#526976" text-anchor="start">个独立真实病例</text>
+<text x="1213" y="588" font-size="18" font-weight="400" fill="#132b3a" text-anchor="start">掩膜 · 三向叠加 · 三维表面</text>
+<text x="1213" y="623" font-size="18" font-weight="400" fill="#526976" text-anchor="start">TotalSegmentator</text>
+<rect x="64" y="676" width="1472" height="146" rx="22" fill="#fffaf4" stroke="#ecd9c5"/>
+<rect x="88" y="699" width="108" height="33" rx="9" fill="#f7e5d2" stroke="#f7e5d2"/>
+<text x="142" y="723" font-size="18" font-weight="700" fill="#855127" text-anchor="middle">验证边界</text>
+<text x="220" y="723" font-size="24" font-weight="600" fill="#132b3a" text-anchor="start">已验证数据接入、授权访问、GPU 推理、结果保存与界面展示。</text>
+<text x="89" y="763" font-size="22" font-weight="400" fill="#526976" text-anchor="start">未提供医学真值支持的 AUC、Dice 或诊断准确率结论；人工 UX 与医学评估仍待完成。</text>
+<text x="89" y="799" font-size="21" font-weight="400" fill="#526976" text-anchor="start">已知限制：直接调整三维窗口尺寸曾出现原图平面黑屏；助手采用确定性事实查询与摘要。</text>
+<path d="M64 842 L1536 842" fill="none" stroke="#dce6e9" stroke-width="3"/>
+<text x="64" y="876" font-size="17" font-weight="600" fill="#526976" text-anchor="start">MEDVISION AI WORKBENCH · 医智工坊</text>
+<text x="1536" y="876" font-size="17" font-weight="400" fill="#526976" text-anchor="end">统计图 · 技术验证，不代表临床有效性</text>
+</g></svg>
