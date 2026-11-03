@@ -525,6 +525,7 @@ class GpuWorkbench:
             self._write_store(store)
 
         unloaded_models: list[str] = []
+        unload_attempted = False
         waited = False
         while True:
             snapshot = self.gpu_snapshot()
@@ -532,12 +533,13 @@ class GpuWorkbench:
             free_mb = primary.get("memory_free_mb")
             if not snapshot.get("available") or not isinstance(free_mb, int) or free_mb >= required_free_mb:
                 break
-            if not unloaded_models:
-                unloaded_models = self.unload_loaded_models()
-                continue
             waited = True
             if on_wait is not None:
                 on_wait(free_mb, required_free_mb)
+            if not unload_attempted:
+                unload_attempted = True
+                unloaded_models = self.unload_loaded_models()
+                continue
             time.sleep(self.poll_seconds)
 
         with self._lock:
