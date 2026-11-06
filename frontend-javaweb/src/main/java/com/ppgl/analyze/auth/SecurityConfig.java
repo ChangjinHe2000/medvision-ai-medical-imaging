@@ -51,6 +51,14 @@ public class SecurityConfig {
             if (headerToken != null) {
                 return headerToken;
             }
+            // Cookies are shared across ports. A stale cookie from another local
+            // instance must not prevent credential login or setup-state discovery.
+            // Explicit bearer headers and every protected endpoint remain validated.
+            String path = request.getRequestURI().substring(request.getContextPath().length());
+            if (("POST".equals(request.getMethod()) && "/api/auth/login".equals(path))
+                    || ("GET".equals(request.getMethod()) && "/api/auth/setup-status".equals(path))) {
+                return null;
+            }
             Cookie[] cookies = request.getCookies();
             if (cookies == null) {
                 return null;
