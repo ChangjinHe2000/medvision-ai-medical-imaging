@@ -1,7 +1,6 @@
 package com.ppgl.analyze.auth;
 
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -106,7 +105,7 @@ public class UserRepository {
         jdbcTemplate.update(connection -> {
             PreparedStatement statement = connection.prepareStatement(
                     "INSERT INTO users (username, password_hash, display_name, email, phone, patient_id_card, role) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                    Statement.RETURN_GENERATED_KEYS
+                    new String[]{"id"}
             );
             statement.setString(1, username);
             statement.setString(2, passwordHash);
