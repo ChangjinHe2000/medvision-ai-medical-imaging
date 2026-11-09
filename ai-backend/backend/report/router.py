@@ -173,7 +173,8 @@ def build_report_router(
     async def stream_chat_case_ai_report(case_id: str, request: Request, payload: AiReportChatRequest):
         case_dir = case_dir_for(case_id)
         result_path = case_dir / "output" / "result.json"
-        if not result_path.exists():
+        ppgl_result_path = case_dir / "output" / "ppgl" / "result.json"
+        if not result_path.exists() and not ppgl_result_path.exists():
             raise HTTPException(status_code=404, detail="请先完成分割，再进行 AI 问答")
         if not payload.question.strip():
             raise HTTPException(status_code=400, detail="问题不能为空")
