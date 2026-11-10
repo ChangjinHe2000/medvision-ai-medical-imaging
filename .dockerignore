@@ -25,3 +25,11 @@ uploads
 jobs
 cases
 ppgl-assist-data
+.secrets
+.local-work
+.local-backups
+var
+release-output
+test-results
+playwright-report
+**/*.webm
