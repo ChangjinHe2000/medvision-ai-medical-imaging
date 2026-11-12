@@ -39,12 +39,13 @@ export async function streamAiReportChat(caseId, question, history = [], onDelta
   })
 
   if (!response.ok) {
+    const body = await response.text()
     let detail = 'AI 问答失败'
     try {
-      const payload = await response.json()
-      detail = payload.detail || detail
-    } catch (err) {
-      detail = await response.text()
+      const payload = JSON.parse(body)
+      detail = payload?.detail || detail
+    } catch {
+      detail = body || detail
     }
     throw new Error(detail)
   }
