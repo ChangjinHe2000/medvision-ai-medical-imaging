@@ -95,3 +95,13 @@ yarn-error.log*
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# Local runtime state / validation artifacts
+.secrets/
+.local-work/
+.local-backups/
+var/
+release-output/
+playwright-report/
+test-results/
+*.webm
