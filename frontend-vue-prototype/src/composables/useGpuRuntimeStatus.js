@@ -24,6 +24,7 @@ let pollTimer = null
 let clockTimer = null
 let visibilityHandler = null
 let pollingStarted = false
+let pendingRefresh = null
 
 const activeTaskCount = computed(() => Number(status.value.summary?.active || 0))
 const hasLiveWork = computed(() => activeTaskCount.value > 0 || (status.value.runtime_activities || []).length > 0)
@@ -61,21 +62,26 @@ function scheduleNextRefresh() {
   }, delay)
 }
 
-async function refresh() {
-  if (isRefreshing.value) return status.value
+function refresh() {
+  if (pendingRefresh) return pendingRefresh
   isRefreshing.value = true
-  try {
-    const payload = await getGpuWorkbench()
-    status.value = payload && typeof payload === 'object' ? payload : EMPTY_STATUS
-    lastError.value = ''
-    lastSuccessfulAt.value = new Date().toISOString()
-    return status.value
-  } catch (error) {
-    lastError.value = error?.response?.data?.detail || error?.response?.data?.message || 'GPU 状态暂时不可用'
-    throw error
-  } finally {
-    isRefreshing.value = false
-  }
+  pendingRefresh = Promise.resolve()
+    .then(() => getGpuWorkbench())
+    .then(payload => {
+      status.value = payload && typeof payload === 'object' ? payload : EMPTY_STATUS
+      lastError.value = ''
+      lastSuccessfulAt.value = new Date().toISOString()
+      return status.value
+    })
+    .catch(error => {
+      lastError.value = error?.response?.data?.detail || error?.response?.data?.message || 'GPU 状态暂时不可用'
+      throw error
+    })
+    .finally(() => {
+      pendingRefresh = null
+      isRefreshing.value = false
+    })
+  return pendingRefresh
 }
 
 async function refreshNow() {
