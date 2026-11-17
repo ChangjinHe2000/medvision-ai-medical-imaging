@@ -55,29 +55,34 @@ export async function streamAiReportChat(caseId, question, history = [], onDelta
   let buffer = ''
   let finalPayload = null
 
-  while (true) {
-    const { done, value } = await reader.read()
-    if (done) {
-      break
-    }
-
-    buffer += decoder.decode(value, { stream: true })
-    const lines = buffer.split('\n')
-    buffer = lines.pop() || ''
-
-    for (const line of lines) {
-      if (!line.trim()) {
-        continue
+  try {
+    while (true) {
+      const { done, value } = await reader.read()
+      if (done) {
+        break
       }
-      const event = JSON.parse(line)
-      if (event.type === 'delta') {
-        onDelta?.(event.text || '')
-      } else if (event.type === 'done') {
-        finalPayload = event.chat
-      } else if (event.type === 'error') {
-        throw new Error(event.detail || 'AI 问答失败')
+
+      buffer += decoder.decode(value, { stream: true })
+      const lines = buffer.split('\n')
+      buffer = lines.pop() || ''
+
+      for (const line of lines) {
+        if (!line.trim()) {
+          continue
+        }
+        const event = JSON.parse(line)
+        if (event.type === 'delta') {
+          onDelta?.(event.text || '')
+        } else if (event.type === 'done') {
+          finalPayload = event.chat
+        } else if (event.type === 'error') {
+          throw new Error(event.detail || 'AI 问答失败')
+        }
       }
     }
+  } finally {
+    await reader.cancel().catch(() => {})
+    reader.releaseLock()
   }
 
   if (buffer.trim()) {
