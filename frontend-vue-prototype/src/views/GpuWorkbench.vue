@@ -281,6 +281,10 @@ function formatTrendTime(value) {
 }
 
 function renderTrend() {
+  if (trendChart && trendChart.getDom() !== trendHost.value) {
+    trendChart.dispose()
+    trendChart = null
+  }
   if (!trendHost.value || telemetrySamples.value.length < 2) return
   if (!trendChart) trendChart = echarts.init(trendHost.value)
   const samples = telemetrySamples.value
